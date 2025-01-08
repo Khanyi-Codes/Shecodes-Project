@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShecCodes Project</title>
+    <style>
+      body {
+        border-top: 100px solid #0d2944;
+        background: #b1b9c5;
+        text-align: center;
+        line-height: 30px;
+        padding: 100px;
+        margin: auto;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      h1 {
+        background-color: #0d2944;
+        text-decoration-color: #b1b9c5;
+        border-radius: 20px;
+        padding: 35px;
+        color: #ffffff;
+      }
+      h2 {
+        background-color: #bb221c;
+        border: black;
+        line-height: 40px;
+      }
+
+      ul {
+        background-color: #0b6b81;
+        color: #ffffff;
+        line-height: 35px;
+        border-radius: 40px;
+        list-style: none;
+      }
+      li {
+        text-align: center;
+        background: transparent;
+        list-style: none;
+        text-decoration-color: #ffffff;
+        font-size: large;
+        font-weight: 300;
+        line-height: 3;
+      }
+      li:hover {
+        background-color: #ffffff;
+        transition: all 200ms ease-in-out;
+        border-radius: 30px;
+        text-decoration-color: #741513;
+      }
+      p {
+        background-color: #ffffff;
+      }
+      .info {
+        background: linear-gradient(70.8deg, #800b1f 0%, #0b6b81 100%);
+        border-radius: 35px;
+        padding: 20px;
+        border-style: none;
+        box-shadow: #ffffff;
+        color: #ffffff;
+        line-height: 3;
+      }
+      button {
+        font-size: large;
+        text-align: center;
+        color: #ffffff;
+        display: block;
+        padding: 15px, 30px;
+        margin: 20px auto;
+        background: #13133f;
+        border: 1px solid #13133f;
+        border-radius: 25px;
+        box-shadow: 10px 5px 5px #032163;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: #ffffff;
+        color: #13133f;
+        transition: 200;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Master Piece</h1>
+    <hr />
+    <h2 class="info">
+      <strong>The Greatest Showman</strong>
+    </h2>
+    <img
+      src="https://confessionsfromageekmind.com/wp-content/uploads/2018/01/the-greatest-showman.gif?w=768"
+      alt="The Greatest Showman"
+      width="280"
+    />
+    <p class="info">
+      The Greatest Showman is a musical biographical movie thats shares the
+      story of P.T. Barnum, who created the Barnam & Baily Circus.
+    </p>
+    <h3>
+      <span>It includes: </span>
+    </h3>
+    <ul>
+      <li>
+        <a
+          href="https://igothereasfastasicould.blog/wp-content/uploads/2016/08/trapeze-2.jpg"
+          class="trapeze"
+          target="_blank"
+          >Trapeze artists
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://static.wikia.nocookie.net/thegreatestshowman/images/0/09/Lettielutz.jpeg/revision/latest?cb=20200805042112"
+          class="Bearded lady"
+          target="_blank"
+        >
+          Bearded ladies
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://i.pinimg.com/1200x/0f/8e/df/0f8edf5f5f4883f93ca3e02b5f8e9db5.jpg"
+          class="Giants"
+          target="_blank"
+        >
+          Giants
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="https://echosrecordbar.s3.af-south-1.amazonaws.com/117127/conversions/109205-medium.jpg"
+          class="Soundtrack"
+          target="_blank"
+        >
+          And fantastic music
+        </a>
+      </li>
+    </ul>
+    <br />
+    <button>Are you interested?</button>
+    <div><em> Coded by Khanyisile Makhubu</em></div>
+    <script>
+      function interest() {
+        let name = prompt("What is your name? ");
+        let interest = prompt("Are you interested? ");
+        let email = prompt("Please enter your email address");
+        interest = interest.toLowerCase();
+        if (interest === "yes") {
+          let h1 = document.querySelector("h1");
+          h1.innerHTML =
+            "Hi " + name + "! Welcome to the Greatest Showman family ";
+        } else {
+          let h1 = document.querySelector("h1");
+          h1.innerHTML = "Thats okay " + name + "! Thank you for visiting us!";
+        }
+        alert("Thank you for visiting");
+      }
+      let interestButton = document.querySelector("button");
+      interestButton.addEventListener("click", interest);
+    </script>
+  </body>
+</html>
+
