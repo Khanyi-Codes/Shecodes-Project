@@ -31,7 +31,7 @@ To run this project locally:
 git clone https://github.com/your-username/shecodes-project.git
 
 
-2. Open the index.html file in your browser.
+2. Open the SheCodes.html file in your browser.
 
 
 > No installations or frameworks required – it's all built with the basics!
